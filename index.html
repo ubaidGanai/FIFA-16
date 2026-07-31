@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mbappu gaming - Downloads</title>
+    <style>
+        :root {
+            --primary: #00e676; /* Gamer Green */
+            --primary-hover: #00c853;
+            --bg-color: #0f0f0f;
+            --card-bg: #1f1f1f;
+            --text-main: #ffffff;
+            --text-muted: #aaaaaa;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--card-bg);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #333;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--text-main);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .yt-btn {
+            background-color: #ff0000; /* YouTube Red */
+            color: white;
+            padding: 0.5rem 1.2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .yt-btn:hover {
+            background-color: #cc0000;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: linear-gradient(to bottom, #1a1a1a, var(--bg-color));
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Container & Grid */
+        .container {
+            max-width: 800px; /* Kept smaller since there's only one item right now */
+            margin: 0 auto;
+            padding: 2rem 5%;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #333;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,230,118,0.2);
+            border-color: var(--primary);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            background-color: #2a2a2a;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-desc {
+            color: var(--text-muted);
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .download-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background-color: var(--primary);
+            color: #000000;
+            padding: 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: var(--primary-hover);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            border-top: 1px solid #333;
+            margin-top: 4rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            header { flex-direction: column; gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <a href="#" class="logo">mbappu <span>gaming</span></a>
+        <!-- Replace YOUR_HANDLE below with your actual YouTube handle -->
+        <a href="https://youtube.com/@[YOUR_HANDLE]?sub_confirmation=1" target="_blank" class="yt-btn">Subscribe on YouTube</a>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Official Downloads</h1>
+        <p>Welcome to the official download page for mbappu gaming! Get the latest APKs and files featured on the channel right here.</p>
+    </section>
+
+    <!-- DOWNLOADS SECTION -->
+    <div class="container">
+        <!-- SINGLE GAME CARD -->
+        <div class="card">
+            <!-- Using the exact image file name you requested -->
+            <img src="icon.png" alt="EA FC 26 Mobile" class="card-img">
+            <div class="card-content">
+                <h2 class="card-title">EA FC 26 Mobile (APK)</h2>
+                <p class="card-desc">Download the latest base APK here. Data and OBB files will be added soon in future updates!</p>
+                <!-- Shrinkme link added to the button -->
+                <a href="https://shrinkme.click/EA_FC_26_MOBILE" class="download-btn" target="_blank">Download APK</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 mbappu gaming. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
